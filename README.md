@@ -58,6 +58,7 @@ The package exposes the `nigerian_phone()` helper function that returns a nigeri
 
 ```php
 nigerian_phone($number, $local = false)
+```
 
 ## Change log
 
