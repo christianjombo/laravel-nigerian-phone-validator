@@ -1,0 +1,58 @@
+{
+    "name": "christianjombo/laravel-nigerian-phone-validator",
+    "type": "library",
+    "description": "Validate Nigerian Phone Numbers in Laravel",
+    "keywords": [
+        "christianjombo",
+        "phone",
+        "phone validation",
+        "phone number",
+        "phone number validation",
+        "nigerian phone validation",
+        "nigerian phone number validation",
+        "nigerian number validation",
+        "nigerian",
+        "nigerian phone"
+    ],
+    "homepage": "https://github.com/christianjombo/laravel-nigerian-phone-validator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": ":Christian Jombo",
+            "email": "unclechris4life@gmail.com",
+            "homepage": "https://heptapixels.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "~5.6|~7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "~4.0||~5.0",
+        "scrutinizer/ocular": "~1.1",
+        "squizlabs/php_codesniffer": "~2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "ChristianJombo\\NigerianPhone\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ChristianJombo\\NigerianPhone\\Test": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "ChristianJombo\\NigerianPhone\\NigerianPhoneServiceProvider"
+            ]
+        }
+    }
+}
