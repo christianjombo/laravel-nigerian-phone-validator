@@ -54,7 +54,7 @@ You can customize the error message by opening `resources/lang/en/validation.php
 
 ### Helper function
 
-The package exposes the `nigerian_phone()` helper function that returns a nigerian number formatted to international format (e.g +2348066128880), if `$local` is not provided or a local number (e.g 08066128880) if `$local` is set to true:
+The package exposes the `nigerian_phone()` helper function that returns a nigerian number formatted to international format (e.g +2348066128880), if `$local` is set to false or not provided. If `$local` is provided and set to true, a local number (e.g 08066128880) is returned. By default, `$local` is set to false:
 
 ```php
 nigerian_phone($number, $local = false)
